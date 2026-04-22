@@ -70,12 +70,13 @@ module "complete" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
 
 ## Modules
 
@@ -85,43 +86,43 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [alicloud_eip_address.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/eip_address) | resource |
-| [alicloud_gwlb_listener.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/gwlb_listener) | resource |
-| [alicloud_gwlb_load_balancer.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/gwlb_load_balancer) | resource |
-| [alicloud_gwlb_server_group.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/gwlb_server_group) | resource |
-| [alicloud_privatelink_vpc_endpoint.gwlbe](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint) | resource |
-| [alicloud_privatelink_vpc_endpoint_service.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint_service) | resource |
-| [alicloud_privatelink_vpc_endpoint_service_resource.default](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint_service_resource) | resource |
-| [alicloud_privatelink_vpc_endpoint_zone.gwlbe](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint_zone) | resource |
-| [alicloud_route_entry.app_to_gwlbe](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_entry) | resource |
-| [alicloud_route_entry.gwlbe_to_ipv4_gateway](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_entry) | resource |
-| [alicloud_route_table.app_vpc_routetable](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_table) | resource |
-| [alicloud_route_table.gwlbe_vpc_routetable](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_table) | resource |
-| [alicloud_route_table.ipv4_gateway_routetable](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_table) | resource |
-| [alicloud_route_table_attachment.app_vpc_routetable](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_table_attachment) | resource |
-| [alicloud_route_table_attachment.gwlbe_vpc_routetable](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/route_table_attachment) | resource |
-| [alicloud_vpc.app](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vpc) | resource |
-| [alicloud_vpc.security](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vpc) | resource |
-| [alicloud_vpc_gateway_route_table_attachment.ipv4_gateway_routetable_attachment](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vpc_gateway_route_table_attachment) | resource |
-| [alicloud_vpc_ipv4_gateway.app](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vpc_ipv4_gateway) | resource |
-| [alicloud_vswitch.app](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vswitch) | resource |
-| [alicloud_vswitch.gwlbe](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vswitch) | resource |
-| [alicloud_vswitch.security](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/vswitch) | resource |
+| [alicloud_eip_address.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/eip_address) | resource |
+| [alicloud_gwlb_listener.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/gwlb_listener) | resource |
+| [alicloud_gwlb_load_balancer.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/gwlb_load_balancer) | resource |
+| [alicloud_gwlb_server_group.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/gwlb_server_group) | resource |
+| [alicloud_privatelink_vpc_endpoint.gwlbe](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint) | resource |
+| [alicloud_privatelink_vpc_endpoint_service.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint_service) | resource |
+| [alicloud_privatelink_vpc_endpoint_service_resource.default](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint_service_resource) | resource |
+| [alicloud_privatelink_vpc_endpoint_zone.gwlbe](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint_zone) | resource |
+| [alicloud_route_entry.app_to_gwlbe](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_entry) | resource |
+| [alicloud_route_entry.gwlbe_to_ipv4_gateway](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_entry) | resource |
+| [alicloud_route_table.app_vpc_routetable](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_table) | resource |
+| [alicloud_route_table.gwlbe_vpc_routetable](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_table) | resource |
+| [alicloud_route_table.ipv4_gateway_routetable](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_table) | resource |
+| [alicloud_route_table_attachment.app_vpc_routetable](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_table_attachment) | resource |
+| [alicloud_route_table_attachment.gwlbe_vpc_routetable](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/route_table_attachment) | resource |
+| [alicloud_vpc.app](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc) | resource |
+| [alicloud_vpc.security](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc) | resource |
+| [alicloud_vpc_gateway_route_table_attachment.ipv4_gateway_routetable_attachment](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc_gateway_route_table_attachment) | resource |
+| [alicloud_vpc_ipv4_gateway.app](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vpc_ipv4_gateway) | resource |
+| [alicloud_vswitch.app](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vswitch) | resource |
+| [alicloud_vswitch.gwlbe](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vswitch) | resource |
+| [alicloud_vswitch.security](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/vswitch) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_app_vpc_routetable_name"></a> [app\_vpc\_routetable\_name](#input\_app\_vpc\_routetable\_name) | The name of the app VPC routing table. | `string` | `"app-vpc-routetable"` | no |
-| <a name="input_eip_address"></a> [eip\_address](#input\_eip\_address) | The configuration of eip address. | <pre>object({<br>    isp                  = optional(string, "BGP")<br>    bandwidth            = optional(string, "2")<br>    internet_charge_type = optional(string, "PayByTraffic")<br>  })</pre> | `{}` | no |
-| <a name="input_gwlb_listener"></a> [gwlb\_listener](#input\_gwlb\_listener) | Configuration for the GWLB listener. | <pre>object({<br>    listener_description = optional(string, null)<br>  })</pre> | `{}` | no |
-| <a name="input_gwlb_server_group"></a> [gwlb\_server\_group](#input\_gwlb\_server\_group) | Configuration for the GWLB server group. | <pre>object({<br>    scheduler = optional(string, "5TCH")<br>    health_check_config = optional(object({<br>      health_check_protocol        = optional(string, "TCP")<br>      health_check_connect_port    = optional(number, 80)<br>      health_check_connect_timeout = optional(number, 5)<br>      health_check_domain          = optional(string, null)<br>      health_check_enabled         = optional(bool, true)<br>      health_check_http_code       = optional(list(string), null)<br>      health_check_interval        = optional(number, 10)<br>      health_check_path            = optional(string, null)<br>      healthy_threshold            = optional(number, 2)<br>      unhealthy_threshold          = optional(number, 2)<br>    }), {})<br>    protocol          = optional(string, "GENEVE")<br>    server_group_type = optional(string, "Ip")<br>    connection_drain_config = optional(object({<br>      connection_drain_enabled = optional(bool, true)<br>      connection_drain_timeout = optional(number, 1)<br>    }), {})<br>    servers = optional(list(object({<br>      server_id   = string<br>      server_ip   = string<br>      server_type = string<br>    })), [])<br>    server_group_name = optional(string, null)<br>  })</pre> | `{}` | no |
+| <a name="input_eip_address"></a> [eip\_address](#input\_eip\_address) | The configuration of eip address. | <pre>object({<br/>    isp                  = optional(string, "BGP")<br/>    bandwidth            = optional(string, "2")<br/>    internet_charge_type = optional(string, "PayByTraffic")<br/>  })</pre> | `{}` | no |
+| <a name="input_gwlb_listener"></a> [gwlb\_listener](#input\_gwlb\_listener) | Configuration for the GWLB listener. | <pre>object({<br/>    listener_description = optional(string, null)<br/>  })</pre> | `{}` | no |
+| <a name="input_gwlb_server_group"></a> [gwlb\_server\_group](#input\_gwlb\_server\_group) | Configuration for the GWLB server group. | <pre>object({<br/>    scheduler = optional(string, "5TCH")<br/>    health_check_config = optional(object({<br/>      health_check_protocol        = optional(string, "TCP")<br/>      health_check_connect_port    = optional(number, 80)<br/>      health_check_connect_timeout = optional(number, 5)<br/>      health_check_domain          = optional(string, null)<br/>      health_check_enabled         = optional(bool, true)<br/>      health_check_http_code       = optional(list(string), null)<br/>      health_check_interval        = optional(number, 10)<br/>      health_check_path            = optional(string, null)<br/>      healthy_threshold            = optional(number, 2)<br/>      unhealthy_threshold          = optional(number, 2)<br/>    }), {})<br/>    protocol          = optional(string, "GENEVE")<br/>    server_group_type = optional(string, "Ip")<br/>    connection_drain_config = optional(object({<br/>      connection_drain_enabled = optional(bool, true)<br/>      connection_drain_timeout = optional(number, 1)<br/>    }), {})<br/>    servers = optional(list(object({<br/>      server_id   = string<br/>      server_ip   = string<br/>      server_type = string<br/>    })), [])<br/>    server_group_name = optional(string, null)<br/>  })</pre> | `{}` | no |
 | <a name="input_gwlbe_vpc_routetable_name"></a> [gwlbe\_vpc\_routetable\_name](#input\_gwlbe\_vpc\_routetable\_name) | The name of the GWLB VPC routing table. | `string` | `"gwlb-vpc-routetable"` | no |
-| <a name="input_ipv4_gateway"></a> [ipv4\_gateway](#input\_ipv4\_gateway) | The configuration of ipv4 gateway. | <pre>object({<br>    name        = optional(string, "app")<br>    description = optional(string, null)<br>    enabled     = optional(bool, true)<br>  })</pre> | `{}` | no |
+| <a name="input_ipv4_gateway"></a> [ipv4\_gateway](#input\_ipv4\_gateway) | The configuration of ipv4 gateway. | <pre>object({<br/>    name        = optional(string, "app")<br/>    description = optional(string, null)<br/>    enabled     = optional(bool, true)<br/>  })</pre> | `{}` | no |
 | <a name="input_ipv4_gateway_routetable_name"></a> [ipv4\_gateway\_routetable\_name](#input\_ipv4\_gateway\_routetable\_name) | The name of the IPv4 gateway routing table. | `string` | `"ipv4-gateway-routetable"` | no |
-| <a name="input_vpc_app"></a> [vpc\_app](#input\_vpc\_app) | The configuration of app vpc. | <pre>object({<br>    vpc_name   = optional(string, "vpc-app")<br>    cidr_block = string<br>  })</pre> | n/a | yes |
-| <a name="input_vpc_security"></a> [vpc\_security](#input\_vpc\_security) | The configuration of security vpc. | <pre>object({<br>    vpc_name   = optional(string, "vpc-security")<br>    cidr_block = string<br>  })</pre> | n/a | yes |
-| <a name="input_vswitches"></a> [vswitches](#input\_vswitches) | The configuration of vswitches. | <pre>object({<br>    security = object({<br>      vswitch_name_prefix = optional(string, "vsw-security")<br>      cidr_block          = list(string)<br>    })<br>    gwlbe = object({<br>      vswitch_name_prefix = optional(string, "vsw-gwlb")<br>      cidr_block          = list(string)<br>    })<br>    app = object({<br>      vswitch_name_prefix = optional(string, "vsw-app")<br>      cidr_block          = list(string)<br>    })<br>  })</pre> | n/a | yes |
+| <a name="input_vpc_app"></a> [vpc\_app](#input\_vpc\_app) | The configuration of app vpc. | <pre>object({<br/>    vpc_name   = optional(string, "vpc-app")<br/>    cidr_block = string<br/>  })</pre> | n/a | yes |
+| <a name="input_vpc_security"></a> [vpc\_security](#input\_vpc\_security) | The configuration of security vpc. | <pre>object({<br/>    vpc_name   = optional(string, "vpc-security")<br/>    cidr_block = string<br/>  })</pre> | n/a | yes |
+| <a name="input_vswitches"></a> [vswitches](#input\_vswitches) | The configuration of vswitches. | <pre>object({<br/>    security = object({<br/>      vswitch_name_prefix = optional(string, "vsw-security")<br/>      cidr_block          = list(string)<br/>    })<br/>    gwlbe = object({<br/>      vswitch_name_prefix = optional(string, "vsw-gwlb")<br/>      cidr_block          = list(string)<br/>    })<br/>    app = object({<br/>      vswitch_name_prefix = optional(string, "vsw-app")<br/>      cidr_block          = list(string)<br/>    })<br/>  })</pre> | n/a | yes |
 | <a name="input_zone_ids"></a> [zone\_ids](#input\_zone\_ids) | The zone ids of vswitches. The length of this list must be two. | `list(string)` | n/a | yes |
 
 ## Outputs
